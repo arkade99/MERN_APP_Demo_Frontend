@@ -7,6 +7,7 @@ export default function DashboardPage() {
   const [userData, setUserData] = useState();
 
   const handleLogout = () => {
+    localStorage.removeItem("token");
     navigate("/login");
   };
   useEffect(() => {

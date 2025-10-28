@@ -20,12 +20,13 @@ export default function LoginPage() {
       try {
         const data = await login(payload);
         console.log(data);
+        navigate("/dashboard");
       } catch (error) {
         console.error(error);
         console.log("error block");
+        //navigate("/dashboard");
       }
     }
-    //navigate("/dashboard");
   };
 
   return (

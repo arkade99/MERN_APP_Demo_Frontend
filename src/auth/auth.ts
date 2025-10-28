@@ -18,6 +18,7 @@ const auth = async (props: propsType) => {
     if (response.data) {
       localStorage.setItem("token", response.data.token);
     }
+    return response.data;
   } catch (error) {
     if (axios.isAxiosError(error)) {
       if ((error.status = 401)) {

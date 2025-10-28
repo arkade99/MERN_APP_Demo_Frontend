@@ -10,7 +10,7 @@ interface payloadType {
 }
 
 export const signin = (payload: payloadType) => {
-  const response = client({
+  const response = auth({
     path: "/user/create",
     reqType: "post",
     payloadData: payload,

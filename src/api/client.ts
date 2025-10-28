@@ -17,7 +17,7 @@ const client = async (props: propsType) => {
   // return response;
   try {
     const response = await axios({
-      headers: { Authorization: `Bearer token ${token}` },
+      headers: { Authorization: `${token}` },
       url: baseUrl,
       method: reqType,
       data: payloadData,

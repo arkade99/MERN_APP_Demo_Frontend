@@ -20,7 +20,7 @@ export default function SignupPage() {
       };
       try {
         const data = await signin(payload);
-        console.log(data);
+        navigate("/dashboard");
       } catch (error) {
         console.error(error);
         console.log("error block");
